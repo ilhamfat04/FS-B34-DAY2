@@ -31,9 +31,9 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/signin" element={<SignIn />} />
+        <Route exact path="/about" element={<About />} />
         {/* protect this routes with <PrivateRoute> */}
         <Route exact path="/" element={<PrivateRoute />}>
-          <Route exact path="/about" element={<About />} />
           <Route exact path="/profile" element={<Profile />} />
           <Route exact path="/users/:id" element={<DetailUser />} />
         </Route>
